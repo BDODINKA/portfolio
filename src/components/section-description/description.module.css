@@ -1,0 +1,31 @@
+.section {
+    min-height: 100vh;
+    background: lightcoral;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    height: 80vh;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.box_Title {
+    width: 20%;
+}
+
+.title {
+    word-break: break-word;
+}
+
+.ava {
+    background: url("https://utro-novosti.ru/upload//upload/news/598885120300.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 100%;
+}

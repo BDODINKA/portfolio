@@ -1,0 +1,40 @@
+.cards{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 33%;
+    height: 100%;
+}
+.ava_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    background: url("https://iaphare.org/wp-content/uploads/2018/11/Project-BG-2005.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.a_item{
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid;
+    background-color: azure;
+    width: 30%;
+    color: green;
+}
+.box_description{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 1rem;
+    word-break: break-word;
+}
+.description{
+    color: blue;
+    font-size: 1rem;
+    word-break: break-word;
+}
