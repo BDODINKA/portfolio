@@ -17,5 +17,20 @@
     padding: 5%;
 }
 .btn{
-
+    background: #282c34;
+    color: #61dafb;
+}
+@media all and  (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        width: 75%;
+    }
+    .btn{
+        width: 50%;
+        padding: 10px;
+    }
 }

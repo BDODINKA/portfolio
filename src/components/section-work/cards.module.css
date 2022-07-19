@@ -38,3 +38,17 @@
     font-size: 1rem;
     word-break: break-word;
 }
+@media all and  (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .card{
+        width: 90%;
+
+    }
+    .ava_card{
+        height: 300px;
+    }
+}
