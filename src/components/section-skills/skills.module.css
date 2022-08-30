@@ -1,6 +1,6 @@
 .section{
     min-height: 100vh;
-    background: yellowgreen;
+    background: #030303;
     display: flex;
     align-items: center;
 }
@@ -15,4 +15,5 @@
     justify-content: center;
     font-size: 1.5rem;
     padding: 5%;
+    color: #a8adb1;
 }

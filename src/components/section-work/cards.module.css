@@ -2,6 +2,7 @@
     height: 70%;
     display: flex;
     justify-content: space-between;
+    padding: 0 2%;
 }
 .card{
     width: 33%;
@@ -23,7 +24,7 @@
     border: 2px solid;
     background-color: azure;
     width: 30%;
-    color: green;
+    color: #e83e8c;
 }
 .box_description{
     display: flex;
@@ -32,9 +33,10 @@
 .title{
     font-size: 1rem;
     word-break: break-word;
+    color: #a8adb1;
 }
 .description{
-    color: blue;
+    color: #20c997;
     font-size: 1rem;
     word-break: break-word;
 }

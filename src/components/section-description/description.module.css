@@ -1,45 +1,72 @@
 .section {
     min-height: 100vh;
-    background: lightcoral;
+    background: #14171a;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section:before{
+    content: '';
+    width: 100%;
+    min-height: 100vh;
+    background: url("/src/assets/img/js-bg.jpeg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    filter:brightness(23%)contrast(110%);
 }
 
 .content {
     height: 80vh;
     border: 1px solid;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 2%;
 }
 
 .box_Title {
-    width: 20%;
+    width: 30%;
 }
 
 .title {
+    font-family: Poppins, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.2;
     word-break: break-word;
+    color: #c7ced3;
+
 }
 
 .ava {
-    background: url("https://utro-novosti.ru/upload//upload/news/598885120300.jpg") no-repeat;
     background-size: cover;
-    background-position: center;
-    width: 35%;
+    background: url("https://utro-novosti.ru/upload//upload/news/598885120300.jpg") no-repeat center;
+    width: 60%;
     height: 100%;
 }
-
-@media all and  (max-width: 768px){
+@media all and  (max-width: 1024px) {
+    .title{
+        font-size: 2.5em;
+    }
+}
+@media all and  (max-width: 768px) {
     .content {
         flex-direction: column;
     }
+
     .box_Title {
         width: 90%;
         padding-bottom: 2%;
     }
+
     .title {
         text-align: left;
+        font-size: 1.7em;
     }
+
     .ava {
         width: 90%;
     }

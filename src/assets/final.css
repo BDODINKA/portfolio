@@ -1,0 +1,22 @@
+root {
+    --header: #000000;
+
+    --header--hover: #141516;
+
+    --Title-color:#c7ced3;
+
+    --header--nav--text: #a8adb1;
+
+    --section-1: #000000;
+
+    --section-2--another: #030303;
+
+    --footer: #141516;
+
+    --textcolor--section: #20c997;
+
+    --placeholder--contact:#5e6062;
+    --form--contact--focus:#123f33;
+    --btn--color--contact:#1c7057;
+    --btn--hover--contact: #20c997
+}

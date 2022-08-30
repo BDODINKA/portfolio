@@ -1,21 +1,21 @@
 import React from 'react';
 import general from "../container.module.css";
 import style from "./footer.module.css";
+import {Social} from "../../bll/bll";
 
 const Footer = () => {
     return (
-        <footer className={style.footer}>
+        <footer className={style.footer} id="Contacts">
             <div className={general.container}>
                 <h3 className={style.title}>Дмитрий Милевский</h3>
                 <div className={style.nav}>
                     <ul className={style.items}>
-                        <li className={style.item}>1</li>
-                        <li className={style.item}>2</li>
-                        <li className={style.item}>3</li>
-                        <li className={style.item}>4</li>
+                        {Social.map((i)=>
+                            <li className={style.item}><a href={i.link} className={style.link}>{i.logo}</a></li>
+                        )}
                     </ul>
                 </div>
-                <span className={style.copiring}>&copy; 2022 Все права защищены</span>
+                <span className={style.copyright}>&copy; 2022 Все права защищены</span>
             </div>
         </footer>
     );
