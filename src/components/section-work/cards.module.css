@@ -1,56 +1,88 @@
-.cards{
+.cards {
     height: 70%;
     display: flex;
     justify-content: space-between;
     padding: 0 2%;
 }
-.card{
+
+.card {
+    display: inherit;
+    flex-direction: column;
+    gap: 20px;
     width: 33%;
     height: 100%;
+    position: relative;
 }
-.ava_card{
+
+.ava_card {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:200px;
-    background: url("https://iaphare.org/wp-content/uploads/2018/11/Project-BG-2005.jpg")no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    filter: blur(1.5px) brightness(60%);
 }
 
-.a_item{
+.a_item {
     font-size: 1rem;
     text-decoration: none;
     border: 2px solid;
-    background-color: azure;
+    border-radius: 5px;
     width: 30%;
-    color: #e83e8c;
+    color: #a8adb1;
+    position: absolute;
+    top: 150px;
+    left: 37%;
+    padding: 2%;
 }
-.box_description{
+
+.a_item:hover {
+    animation: flicker 0.7s ease-in-out infinite;
+}
+
+@keyframes flicker {
+    from {
+        color: #1c7057;
+        border: 2px solid #1c7057;
+    }
+    to {
+        color: #20c997;
+        border:2px solid #20c997;
+    }
+}
+
+.box_description {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
-.title{
-    font-size: 1rem;
+
+.title {
+    font-size: 1.2em;
     word-break: break-word;
     color: #a8adb1;
 }
-.description{
+
+.description {
     color: #20c997;
     font-size: 1rem;
     word-break: break-word;
 }
+
 @media all and  (max-width: 768px) {
     .cards {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .card{
+
+    .card {
         width: 90%;
 
     }
-    .ava_card{
+
+    .ava_card {
         height: 300px;
     }
 }
