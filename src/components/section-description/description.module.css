@@ -42,10 +42,12 @@
 }
 
 .ava {
-    background-size: cover;
-    background: url("https://utro-novosti.ru/upload//upload/news/598885120300.jpg") no-repeat center;
+
     width: 60%;
     height: 100%;
+    background-size: cover;
+    background: url("/src/assets/img/photo.png") no-repeat top;
+
 }
 @media all and  (max-width: 1024px) {
     .title{
