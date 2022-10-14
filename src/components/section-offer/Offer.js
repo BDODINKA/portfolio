@@ -8,7 +8,7 @@ const Offer = () => {
             <div className={general.container}>
                 <div className={style.content}>
                         <h3 className={style.title}>Рассматриваю варианты удаленной работы</h3>
-                        <button className={style.btn}>Нанять меня</button>
+                        <a className={style.btn} href={'#Contacts'}>Нанять меня</a>
                 </div>
             </div>
         </section>
